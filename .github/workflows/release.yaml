@@ -10,4 +10,4 @@ jobs:
       env:
         TAG_NAME: ${{ github.event.release.tag_name }}
       run: |
-        Write-Output $env:TAG_NAME
+        Write-Output $env:TAG_NAME -replace "v",""
