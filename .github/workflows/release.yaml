@@ -8,6 +8,6 @@ jobs:
     steps:
     - shell: pwsh
       env:
-        TAG_NAME: ${{ github.event.release.tag_name }}}
+        TAG_NAME: ${{ github.event.release.tag_name }}
       run: |
         Write-Output $env:TAG_NAME
